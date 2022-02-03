@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>reactJS JSX</title>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <div id="app">
+
+        <script type="text/babel">
+             // const name ="hajer ";
+            //const ele = <p> Hello {name} </p>;
+           const ele =( 
+               <p className="test">
+                 <span> span 1</span>
+                 <h2> helllooooooo</h2>
+                 <i> ilalic </i>
+                 
+                 </p>);
+           const ele2=React.createElement(
+               'p',
+               {className:'test'},
+               'hello React 2'
+           )
+            
+            ReactDOM.render(ele, document.getElementById('app')); 
+          //  ReactDOM.render(ele, document.getElementById('app')); 
+        </script>
+    </div>
+</body>
+
+</html>

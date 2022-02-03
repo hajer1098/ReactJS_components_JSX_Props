@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>reactJS ComponentS</title>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <div id="app">
+
+        <script type="text/babel">
+
+            class App extends React.Component {
+                render() {
+
+                    return(
+                        <div>
+                            <Header/>
+                            <Content/>
+                            <Footer/>
+                      </div>
+                    )
+                }
+            }
+            //header component 
+            class Header extends React.Component {
+                render() {
+
+                    return (
+                        <Header>  My header  </Header>
+                
+                    )
+                }
+            }
+
+            // content component
+            class  Content extends React.Component {
+                render() {
+
+                    return (
+                        <main>  My Content  </main>
+                
+                    )
+                }
+            }
+              // footer component
+              class  Footer extends React.Component {
+                render() {
+
+                    return (
+                        <main>  My Footer  </main>
+                
+                    )
+                }
+            }
+
+            //affichage 
+            ReactDOM.render(<App />, document.getElementById('app')); 
+        </script>
+    </div>
+</body>
+
+</html>
